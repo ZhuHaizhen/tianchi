@@ -230,7 +230,7 @@ select *
 from product
      natural join product2;
 /*
-由于运动 T 恤的 regist_date 字段为空，而两个缺失值用等号进行比较的结果不为真，因此不会返回这一行
+由于运动T恤的 regist_date 字段为空，而两个缺失值用等号进行比较的结果不为真，因此不会返回这一行
 即：在进行自然联结时，会将指定字段逐个进行等值联结，只返回联结条件为真的行
  */
 select *
